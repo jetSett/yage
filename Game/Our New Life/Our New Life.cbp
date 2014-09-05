@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Our New Life" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="all">
+				<Option output="../ONL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-DGLM_FORCE_RADIANS" />
+					<Add directory="../../" />
+					<Add directory="../../Core" />
+					<Add directory="../EntitySystem" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+					<Add library="Core" />
+					<Add library="Graphics" />
+					<Add library="Sounds" />
+					<Add library="3D" />
+					<Add directory="../../" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Engines/Engine.cpp" />
+		<Unit filename="Engines/Engine.hpp" />
+		<Unit filename="Engines/GameEngine.cpp" />
+		<Unit filename="Engines/GameEngine.hpp" />
+		<Unit filename="Engines/GraphicsEngine.cpp" />
+		<Unit filename="Engines/GraphicsEngine.hpp" />
+		<Unit filename="Engines/MessageManaging.cpp" />
+		<Unit filename="Engines/MessageManaging.hpp" />
+		<Unit filename="Engines/SoundEngine.cpp" />
+		<Unit filename="Engines/SoundEngine.hpp" />
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.hpp" />
+		<Unit filename="Systems/EntityFactory.cpp" />
+		<Unit filename="Systems/EntityFactory.hpp" />
+		<Unit filename="Systems/PositionSystem.cpp" />
+		<Unit filename="Systems/PositionSystem.hpp" />
+		<Unit filename="Systems/RenderableSystem.cpp" />
+		<Unit filename="Systems/RenderableSystem.hpp" />
+		<Unit filename="Systems/System.cpp" />
+		<Unit filename="Systems/System.hpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

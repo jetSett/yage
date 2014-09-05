@@ -1,0 +1,31 @@
+////////////////////////////////////////////
+// Structures d'entrées / sorties
+////////////////////////////////////////////
+struct VS_INPUT
+{
+	float4 Position : POSITION;
+	float3 Normal   : NORMAL;
+	float4 Diffuse  : COLOR0;
+	float4 Tex0     : TEXCOORD0;
+};
+struct VS_OUTPUT
+{
+	float4 Position : POSITION;
+	float4 Diffuse  : COLOR0;
+	float4 Tex0     : TEXCOORD0;
+};
+
+
+////////////////////////////////////////////
+// Programme principal
+////////////////////////////////////////////
+VS_OUTPUT main(VS_INPUT VertIn, uniform float4x4 ModelViewProj)
+{
+	VS_OUTPUT VertOut;
+
+	VertOut.Position = mul(ModelViewProj, VertIn.Position);
+	VertOut.Diffuse  = VertIn.Diffuse;
+	VertOut.Tex0     = VertIn.Tex0;
+
+	return VertOut;
+}

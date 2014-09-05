@@ -1,0 +1,158 @@
+# depslib dependency file v1.0
+1406833455 source:/home/joel/Prog/yage/2D/Renderer.cpp
+	"Renderer.hpp"
+	<Memory/NewInc.hpp>
+
+1409572964 /home/joel/Prog/yage/2D/Renderer.hpp
+	<list>
+	<Graphics/WindowsManager.hpp>
+	"Window2D.hpp"
+
+1406833456 /home/joel/Prog/yage//Graphics/WindowsManager.hpp
+	<map>
+	<string>
+	<exception>
+	<Memory/SmartPtr.hpp>
+	<Utils/Exceptions.hpp>
+	<Utils/Singleton.hpp>
+	"Window.hpp"
+
+1400277262 /home/joel/Prog/yage/Core//Utils/SmartPtr.hpp
+	<algorithm>
+	<cassert>
+	"SmartPtr.tcc"
+
+1400278038 /home/joel/Prog/yage/Core//Utils/SmartPtr.tcc
+
+1406833455 /home/joel/Prog/yage/Core//Utils/Exceptions.hpp
+	<exception>
+	<string>
+	<sstream>
+
+1406833455 /home/joel/Prog/yage/Core//Utils/Singleton.hpp
+	"../Memory/MemoryManager.hpp"
+
+1406833456 /home/joel/Prog/yage//Graphics/Window.hpp
+	<string>
+	<SDL2/SDL.h>
+	"InputManager.hpp"
+
+1408225250 /home/joel/Prog/yage//Graphics/InputManager.hpp
+	<array>
+	<list>
+	<SDL2/SDL.h>
+	<glm/glm.hpp>
+	<Utils/Exceptions.hpp>
+	<Utils/Singleton.hpp>
+
+1406833455 /home/joel/Prog/yage/2D/Window2D.hpp
+	<list>
+	<SDL2/SDL.h>
+	<Graphics/WindowsManager.hpp>
+	"Shape.hpp"
+
+1407190519 source:/home/joel/Prog/yage/2D/Window2D.cpp
+	"Window2D.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 source:/home/joel/Prog/yage/2D/Utils.cpp
+	"Utils.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 /home/joel/Prog/yage/2D/Utils.hpp
+	<SDL2/SDL.h>
+	<Graphics/Resources/PixelUtils.hpp>
+
+1406833456 /home/joel/Prog/yage//Graphics/Resources/PixelUtils.hpp
+	<iostream>
+	<string>
+	<Utils/Exceptions.hpp>
+	"ConvertPixel.tcc"
+
+1406833456 /home/joel/Prog/yage//Graphics/Resources/ConvertPixel.tcc
+
+1406833455 source:/home/joel/Prog/yage/2D/Texture.cpp
+	"Texture.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 /home/joel/Prog/yage/2D/Texture.hpp
+	<SDL2/SDL.h>
+	<Memory/SmartPtr.hpp>
+	<Graphics/Resources/Image.hpp>
+	"Utils.hpp"
+
+1406833456 /home/joel/Prog/yage//Graphics/Resources/Image.hpp
+	<vector>
+	<SDL2/SDL_surface.h>
+	"../Graphics/Utils/Color.hpp"
+	<Utils/Exceptions.hpp>
+	<Utils/Logger.hpp>
+	<glm/glm.hpp>
+	"PixelUtils.hpp"
+	<Utils/Surfaces.hpp>
+	<ResourcesMgr/Resource.hpp>
+
+1406833456 /home/joel/Prog/yage/Graphics/Utils/Color.hpp
+	<Utils/Math.hpp>
+
+1406833455 /home/joel/Prog/yage/Core//Utils/Math.hpp
+	<random>
+	"Singleton.hpp"
+
+1406833455 /home/joel/Prog/yage/Core//Utils/Logger.hpp
+	<string>
+	<sstream>
+	<cassert>
+	<ctime>
+	<iostream>
+	<fstream>
+	"Exceptions.hpp"
+
+1406833455 /home/joel/Prog/yage/Core//Utils/Surfaces.hpp
+	<algorithm>
+	<glm/glm.hpp>
+
+1406833455 /home/joel/Prog/yage/Core//ResourcesMgr/Resource.hpp
+	<string>
+
+1406833455 /home/joel/Prog/yage/Core//Memory/SmartPtr.hpp
+	<algorithm>
+	<cassert>
+	"MemoryManager.hpp"
+	"SmartPtr.tcc"
+
+1406833455 /home/joel/Prog/yage/Core//Memory/NewInc.hpp
+	"MemoryManager.hpp"
+
+1406833455 /home/joel/Prog/yage/Core//Memory/MemoryManager.hpp
+	<cstdlib>
+	<map>
+	<stack>
+	<fstream>
+	"../Utils/Exceptions.hpp"
+	"../Utils/FilePath.hpp"
+
+1406833455 /home/joel/Prog/yage/Core//Utils/FilePath.hpp
+	<string>
+	<algorithm>
+	<fstream>
+
+1406833455 /home/joel/Prog/yage/Core//Memory/SmartPtr.tcc
+
+1406582480 /home/joel/Prog/yage/Core//Memory/NewIncOff.hpp
+
+1409599041 source:/home/joel/Prog/yage/2D/Shape.cpp
+	"Shape.hpp"
+	<Memory/NewInc.hpp>
+
+1409598966 /home/joel/Prog/yage/2D/Shape.hpp
+	"Texture.hpp"
+
+1409572901 /home/joel/Prog/yage/2D/TileMap.hpp
+	<glm/vec2.hpp>
+	<glm/vec4.hpp>
+	"Shape.hpp"
+	"TileMap.tcc"
+
+1409572950 /home/joel/Prog/yage/2D/TileMap.tcc
+

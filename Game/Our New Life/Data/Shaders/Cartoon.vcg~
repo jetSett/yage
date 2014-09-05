@@ -1,0 +1,64 @@
+////////////////////////////////////////////
+// Structures d'entrées / sorties
+////////////////////////////////////////////
+struct VS_INPUT
+{
+	float4 Position : POSITION;
+   	float3 Normal   : NORMAL;
+   	float4 Diffuse  : COLOR0;
+   	float2 Tex0     : TEXCOORD0;
+};
+struct VS_OUTPUT
+{
+   	float4 Position : POSITION;
+   	float4 Diffuse  : COLOR0;
+   	float2 Tex0     : TEXCOORD0;
+   	float2 Tex1     : TEXCOORD1;
+   	float2 Tex2     : TEXCOORD2;
+};
+
+
+////////////////////////////////////////////
+// Programme principal
+////////////////////////////////////////////
+VS_OUTPUT main(VS_INPUT VertIn,                // Vertex reçu en entrée
+               uniform float4x4 ModelViewProj, // Matrice de transformation espace modèle -> espace écran
+               uniform float4x4 ModelView,     // Matrice de transformation espace modèle -> espace caméra
+               uniform float3   LightDir,      // Direction de la lumière
+               uniform float3   CameraPos)     // Position de la caméra
+{
+   	VS_OUTPUT VertOut;
+
+//////// CALCULS HABITUELS ////////
+
+	// Transformation de la position
+   	VertOut.Position = mul(ModelViewProj, VertIn.Position);
+
+	// On passe directement la couleur diffuse
+   	VertOut.Diffuse = VertIn.Diffuse;
+
+	// On passe directement les coordonnées de texture 0
+   	VertOut.Tex0 = VertIn.Tex0;
+
+//////// OMBRAGE ////////
+
+	// Transformation de la normale dans l'espace caméra
+	//float3 Norm = normalize(mul(ModelView, float4(VertIn.Normal, 0.0)).xyz);
+
+	// Calcul de l'angle (produit scalaire) entre la lumière et le sommet : le résultat servira de coordonnée de texture 1
+	//VertOut.Tex1 = float2((dot(Norm, LightDir) + 1) / 2.1, 0.25);
+
+//////// CONTOUR ////////
+
+	// Transformation de la position du sommet dans l'espace caméra
+	//float3 Pos = mul(ModelView, VertIn.Position).xyz;
+
+	// Calcul du vecteur camera - sommet
+	//float3 CamVertex = normalize(CameraPos - Pos);
+
+	// Calcul de l'angle (produit scalaire) entre la normale du sommet et le vecteur CamVertex
+	//VertOut.Tex2 = float2(max(dot(Norm, CamVertex), 0.0), 0.75);
+
+   	return VertOut;
+}
+

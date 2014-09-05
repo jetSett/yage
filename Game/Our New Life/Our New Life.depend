@@ -1,0 +1,573 @@
+# depslib dependency file v1.0
+1406833455 source:/home/joel/Prog/yage/Game/Our New Life/Engines/Engine.cpp
+	"Engine.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 /home/joel/Prog/yage/Game/Our New Life/Engines/Engine.hpp
+	"../Game.hpp"
+
+1406833455 /home/joel/Prog/yage/Game/Our New Life/Game.hpp
+	<unordered_map>
+	<Utils/Logger.hpp>
+	<ResourcesMgr/MediaManager.hpp>
+	<3D/OPENGL2/OGL2Renderer.hpp>
+	"Engines/MessageManaging.hpp"
+
+1406833455 /home/joel/Prog/yage/Core/Utils/Logger.hpp
+	<string>
+	<sstream>
+	<cassert>
+	<ctime>
+	<iostream>
+	<fstream>
+	"Exceptions.hpp"
+
+1406833455 /home/joel/Prog/yage/Core/Utils/Exceptions.hpp
+	<exception>
+	<string>
+	<sstream>
+
+1406833455 /home/joel/Prog/yage/Core/ResourcesMgr/MediaManager.hpp
+	<map>
+	<set>
+	<string>
+	<algorithm>
+	"../Utils/Metaprog.hpp"
+	"../Memory/SmartPtr.hpp"
+	"../Utils/FilePath.hpp"
+	"../Utils/StringUtilities.hpp"
+	"../Utils/Singleton.hpp"
+	"Loaders.hpp"
+	"../../3D/Resources/Model.hpp"
+	"../../Graphics/Resources/Image.hpp"
+	"../../3D/Resources/ShaderBase.hpp"
+	"../../Sounds/Resources/Sound.hpp"
+
+1406833455 /home/joel/Prog/yage/Core/Utils/Metaprog.hpp
+
+1400277262 /home/joel/Prog/yage/Core/Utils/SmartPtr.hpp
+	<algorithm>
+	<cassert>
+	"SmartPtr.tcc"
+
+1400278038 /home/joel/Prog/yage/Core/Utils/SmartPtr.tcc
+
+1406833455 /home/joel/Prog/yage/Core/Utils/FilePath.hpp
+	<string>
+	<algorithm>
+	<fstream>
+
+1406833455 /home/joel/Prog/yage/Core/Utils/StringUtilities.hpp
+	<iostream>
+	<vector>
+	<sstream>
+	<string>
+	<algorithm>
+	"Exceptions.hpp"
+
+1406833455 /home/joel/Prog/yage/Core/Utils/Singleton.hpp
+	"../Memory/MemoryManager.hpp"
+
+1406833455 /home/joel/Prog/yage/Core/ResourcesMgr/Loaders.hpp
+	<string>
+	<iostream>
+	<vector>
+	"../Utils/Exceptions.hpp"
+	"Resource.hpp"
+	"ResourceManager.hpp"
+
+1406833455 /home/joel/Prog/yage/Core/ResourcesMgr/Resource.hpp
+	<string>
+
+1406833455 /home/joel/Prog/yage/Core/ResourcesMgr/ResourceManager.hpp
+	<string>
+	<map>
+	"../Utils/Singleton.hpp"
+	"../Utils/Exceptions.hpp"
+	"Resource.hpp"
+
+1406833455 /home/joel/Prog/yage/3D/Resources/Model.hpp
+	<glm/glm.hpp>
+	<ResourcesMgr/Resource.hpp>
+	"../Renderer.hpp"
+	"../Buffer.hpp"
+	"../Texture.hpp"
+
+1406833455 /home/joel/Prog/yage/3D/Renderer.hpp
+	<cassert>
+	<SDL2/SDL.h>
+	<Cg/cg.h>
+	<glm/glm.hpp>
+	"Enums.hpp"
+	"../Graphics/WindowsManager.hpp"
+	"TextureBase.hpp"
+	"Buffer.hpp"
+	"Declaration.hpp"
+	"Resources/ShaderBase.hpp"
+
+1406833455 /home/joel/Prog/yage/3D/Enums.hpp
+	<string>
+
+1406833456 /home/joel/Prog/yage/Graphics/WindowsManager.hpp
+	<map>
+	<string>
+	<exception>
+	<Memory/SmartPtr.hpp>
+	<Utils/Exceptions.hpp>
+	<Utils/Singleton.hpp>
+	"Window.hpp"
+
+1406833456 /home/joel/Prog/yage/Graphics/Window.hpp
+	<string>
+	<SDL2/SDL.h>
+	"InputManager.hpp"
+
+1407190671 /home/joel/Prog/yage/Graphics/InputManager.hpp
+	<array>
+	<list>
+	<SDL2/SDL.h>
+	<glm/glm.hpp>
+	<Utils/Exceptions.hpp>
+	<Utils/Singleton.hpp>
+
+1406833455 /home/joel/Prog/yage/3D/TextureBase.hpp
+	<glm/glm.hpp>
+	<Utils/Surfaces.hpp>
+	<Utils/Logger.hpp>
+	<ResourcesMgr/Resource.hpp>
+	"../Graphics/Resources/Image.hpp"
+
+1406833455 /home/joel/Prog/yage/Core/Utils/Surfaces.hpp
+	<algorithm>
+	<glm/glm.hpp>
+
+1406833456 /home/joel/Prog/yage/Graphics/Resources/Image.hpp
+	<vector>
+	<SDL2/SDL_surface.h>
+	"../Graphics/Utils/Color.hpp"
+	<Utils/Exceptions.hpp>
+	<Utils/Logger.hpp>
+	<glm/glm.hpp>
+	"PixelUtils.hpp"
+	<Utils/Surfaces.hpp>
+	<ResourcesMgr/Resource.hpp>
+
+1406833456 /home/joel/Prog/yage/Graphics/Utils/Color.hpp
+	<Utils/Math.hpp>
+
+1406833455 /home/joel/Prog/yage/Core/Utils/Math.hpp
+	<random>
+	"Singleton.hpp"
+
+1406833456 /home/joel/Prog/yage/Graphics/Resources/PixelUtils.hpp
+	<iostream>
+	<string>
+	<Utils/Exceptions.hpp>
+	"ConvertPixel.tcc"
+
+1406833456 /home/joel/Prog/yage/Graphics/Resources/ConvertPixel.tcc
+
+1406833455 /home/joel/Prog/yage/3D/Buffer.hpp
+	<Memory/SmartPtr.hpp>
+	"BufferBase.hpp"
+
+1406833455 /home/joel/Prog/yage/3D/BufferBase.hpp
+
+1406833455 /home/joel/Prog/yage/3D/Declaration.hpp
+	<Memory/SmartPtr.hpp>
+
+1406833455 /home/joel/Prog/yage/3D/Resources/ShaderBase.hpp
+	<Cg/cg.h>
+	<glm/glm.hpp>
+	<ResourcesMgr/Resource.hpp>
+
+1406833455 /home/joel/Prog/yage/3D/Texture.hpp
+	<Memory/SmartPtr.hpp>
+	<Utils/Logger.hpp>
+	<Utils/Exceptions.hpp>
+	"TextureBase.hpp"
+
+1406833456 /home/joel/Prog/yage/Sounds/Resources/Sound.hpp
+	<fmode/fmod.h>
+	"ResourcesMgr/Resource.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/OPENGL2/OGL2Renderer.hpp
+	<Utils/Singleton.hpp>
+	<Utils/Logger.hpp>
+	"../OGL/OGLUtils.hpp"
+	"../OGL/OGLTexture.hpp"
+	"../OGL/OGLDeclaration.hpp"
+	"../OGL/OGLShader.hpp"
+	"../Renderer.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/OGL/OGLUtils.hpp
+	<exception>
+	<string>
+	<GL/glew.h>
+	<GL/glx.h>
+	<GL/glext.h>
+	<GL/glxext.h>
+	"../Enums.hpp"
+	<Utils/Exceptions.hpp>
+	"../../Graphics/Resources/PixelUtils.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/Enums.hpp
+	<string>
+
+1406833456 /home/joel/Prog/yage//Graphics/Resources/PixelUtils.hpp
+	<iostream>
+	<string>
+	<Utils/Exceptions.hpp>
+	"ConvertPixel.tcc"
+
+1406833456 /home/joel/Prog/yage//Graphics/Resources/ConvertPixel.tcc
+
+1406833455 /home/joel/Prog/yage//3D/OGL/OGLTexture.hpp
+	"../TextureBase.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/TextureBase.hpp
+	<glm/glm.hpp>
+	<Utils/Surfaces.hpp>
+	<Utils/Logger.hpp>
+	<ResourcesMgr/Resource.hpp>
+	"../Graphics/Resources/Image.hpp"
+
+1406833456 /home/joel/Prog/yage//Graphics/Resources/Image.hpp
+	<vector>
+	<SDL2/SDL_surface.h>
+	"../Graphics/Utils/Color.hpp"
+	<Utils/Exceptions.hpp>
+	<Utils/Logger.hpp>
+	<glm/glm.hpp>
+	"PixelUtils.hpp"
+	<Utils/Surfaces.hpp>
+	<ResourcesMgr/Resource.hpp>
+
+1406833455 /home/joel/Prog/yage//3D/OGL/OGLDeclaration.hpp
+	<vector>
+	"../Declaration.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/Declaration.hpp
+	<Memory/SmartPtr.hpp>
+
+1406833455 /home/joel/Prog/yage//3D/OGL/OGLShader.hpp
+	"../Resources/ShaderBase.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/Resources/ShaderBase.hpp
+	<Cg/cg.h>
+	<glm/glm.hpp>
+	<ResourcesMgr/Resource.hpp>
+
+1406833455 /home/joel/Prog/yage//3D/Renderer.hpp
+	<cassert>
+	<SDL2/SDL.h>
+	<Cg/cg.h>
+	<glm/glm.hpp>
+	"Enums.hpp"
+	"../Graphics/WindowsManager.hpp"
+	"TextureBase.hpp"
+	"Buffer.hpp"
+	"Declaration.hpp"
+	"Resources/ShaderBase.hpp"
+
+1406833456 /home/joel/Prog/yage//Graphics/WindowsManager.hpp
+	<map>
+	<string>
+	<exception>
+	<Memory/SmartPtr.hpp>
+	<Utils/Exceptions.hpp>
+	<Utils/Singleton.hpp>
+	"Window.hpp"
+
+1406833456 /home/joel/Prog/yage//Graphics/Window.hpp
+	<string>
+	<SDL2/SDL.h>
+	"InputManager.hpp"
+
+1407190671 /home/joel/Prog/yage//Graphics/InputManager.hpp
+	<array>
+	<list>
+	<SDL2/SDL.h>
+	<glm/glm.hpp>
+	<Utils/Exceptions.hpp>
+	<Utils/Singleton.hpp>
+
+1406833455 /home/joel/Prog/yage//3D/Buffer.hpp
+	<Memory/SmartPtr.hpp>
+	"BufferBase.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/BufferBase.hpp
+
+1403651758 /home/joel/Prog/yage/Game/Our New Life/Engines/MessageBox.hpp
+	<string>
+	<map>
+	<queue>
+	<thread>
+	<mutex>
+	<functional>
+	<glm/glm.hpp>
+	<Utils/Exceptions.hpp>
+	<Utils/Logger.hpp>
+
+1407083226 source:/home/joel/Prog/yage/Game/Our New Life/Engines/GraphicsEngine.cpp
+	"GraphicsEngine.hpp"
+	"../3D/Scene/ObjectNode.hpp"
+	"../3D/ModelObject.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 /home/joel/Prog/yage/Game/Our New Life/Engines/GraphicsEngine.hpp
+	<glm/gtx/transform.hpp>
+	"Engine.hpp"
+	<3D/OPENGL2/OGL2Renderer.hpp>
+	<Graphics/WindowsManager.hpp>
+	<3D/CamerasManager.hpp>
+	<3D/SceneGraph.hpp>
+	<3D/Cameras/FreeFlyCamera.hpp>
+	<3D/Shader.hpp>
+	<ResourcesMgr/MediaManager.hpp>
+
+1406833455 /home/joel/Prog/yage//3D/CamerasManager.hpp
+	<string>
+	<map>
+	"Utils/Singleton.hpp"
+	"Memory/SmartPtr.hpp"
+	"Cameras/Camera.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/Cameras/Camera.hpp
+	<glm/glm.hpp>
+	"../Renderer.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/SceneGraph.hpp
+	<map>
+	<Utils/Singleton.hpp>
+	<Utils/Logger.hpp>
+	<Utils/Exceptions.hpp>
+	"Scene/SceneNode.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/Scene/SceneNode.hpp
+	<list>
+	<string>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<Memory/SmartPtr.hpp>
+
+1406833455 /home/joel/Prog/yage//3D/Cameras/FreeFlyCamera.hpp
+	<cmath>
+	<Utils/Logger.hpp>
+	"../Graphics/InputManager.hpp"
+	"Camera.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/Shader.hpp
+	<string>
+	"../Graphics/Utils/Color.hpp"
+	"Resources/ShaderBase.hpp"
+	<Memory/SmartPtr.hpp>
+	<ResourcesMgr/MediaManager.hpp>
+	<ResourcesMgr/ResourceManager.hpp>
+
+1406833456 /home/joel/Prog/yage//Graphics/Utils/Color.hpp
+	<Utils/Math.hpp>
+
+1406833455 /home/joel/Prog/yage/3D/Scene/ObjectNode.hpp
+	"SceneNode.hpp"
+	"../RenderableObject.hpp"
+
+1406833455 /home/joel/Prog/yage/3D/Scene/SceneNode.hpp
+	<list>
+	<string>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<Memory/SmartPtr.hpp>
+
+1406833455 /home/joel/Prog/yage/3D/RenderableObject.hpp
+
+1406833455 /home/joel/Prog/yage/3D/ModelObject.hpp
+	"RenderableObject.hpp"
+	"Resources/Model.hpp"
+
+1403651741 source:/home/joel/Prog/yage/Game/Our New Life/Engines/MessageBox.cpp
+	"MessageBox.hpp"
+
+1406833455 source:/home/joel/Prog/yage/Game/Our New Life/Engines/SoundEngine.cpp
+	"SoundEngine.hpp"
+	"ResourcesMgr/MediaManager.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 /home/joel/Prog/yage/Game/Our New Life/Engines/SoundEngine.hpp
+	<list>
+	"Engine.hpp"
+	"../Sounds/SoundManager.hpp"
+
+1406833456 /home/joel/Prog/yage/Sounds/SoundManager.hpp
+	<string>
+	<fmode/fmod.h>
+	<Utils/Singleton.hpp>
+	<Memory/SmartPtr.hpp>
+	"Resources/Sound.hpp"
+
+1406833455 source:/home/joel/Prog/yage/Game/Our New Life/Game.cpp
+	<ResourcesMgr/ResourceManager.hpp>
+	"Game.hpp"
+	"Engines/GraphicsEngine.hpp"
+	"Engines/SoundEngine.hpp"
+	"Engines/GameEngine.hpp"
+	<Graphics/Loaders/ImagesLoader.hpp>
+	<3D/Loaders/MD2Loader.hpp>
+	<3D/Loaders/ShadersLoader.hpp>
+	<Sounds/Loaders/SoundLoaders.hpp>
+	<Memory/NewInc.hpp>
+
+1406833456 /home/joel/Prog/yage//Graphics/Loaders/ImagesLoader.hpp
+	"../Resources/Image.hpp"
+	<ResourcesMgr/Loaders.hpp>
+
+1406833455 /home/joel/Prog/yage//3D/Loaders/MD2Loader.hpp
+	<ResourcesMgr/Loaders.hpp>
+	"../Resources/Model.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/Resources/Model.hpp
+	<glm/glm.hpp>
+	<ResourcesMgr/Resource.hpp>
+	"../Renderer.hpp"
+	"../Buffer.hpp"
+	"../Texture.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/Texture.hpp
+	<Memory/SmartPtr.hpp>
+	<Utils/Logger.hpp>
+	<Utils/Exceptions.hpp>
+	"TextureBase.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/Loaders/ShadersLoader.hpp
+	<ResourcesMgr/Loaders.hpp>
+	"../Resources/ShaderBase.hpp"
+
+1406833456 /home/joel/Prog/yage//Sounds/Loaders/SoundLoaders.hpp
+	"../Resources/Sound.hpp"
+	<ResourcesMgr/Loaders.hpp>
+
+1406833456 /home/joel/Prog/yage//Sounds/Resources/Sound.hpp
+	<fmode/fmod.h>
+	"ResourcesMgr/Resource.hpp"
+
+1406833455 source:/home/joel/Prog/yage/Game/Our New Life/main.cpp
+	"Game.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 source:/home/joel/Prog/yage/Game/Our New Life/Engines/GameEngine.cpp
+	"GameEngine.hpp"
+	"../Systems/PositionSystem.hpp"
+	"../Systems/RenderableSystem.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 /home/joel/Prog/yage/Game/Our New Life/Engines/GameEngine.hpp
+	<list>
+	<Memory/SmartPtr.hpp>
+	"../Systems/System.hpp"
+	"../Systems/EntityFactory.hpp"
+	"Engine.hpp"
+
+1404259492 /home/joel/Prog/yage/Game/EntitySystem/System.hpp
+	<list>
+	"Entity.hpp"
+
+1406833455 /home/joel/Prog/yage/Game/EntitySystem/Entity.hpp
+	<map>
+	"Components.hpp"
+
+1407074576 /home/joel/Prog/yage/Game/EntitySystem/Components.hpp
+	<string>
+	<sstream>
+	<Memory/SmartPtr.hpp>
+	<3D/RenderableObject.hpp>
+
+1406833455 /home/joel/Prog/yage//3D/RenderableObject.hpp
+
+1404150102 /home/joel/Prog/yage/Game/EntitySystem/EntityFactory.hpp
+	<fstream>
+	<Utils/Exceptions.hpp>
+	<Utils/StringUtilities.hpp>
+	<Utils/Singleton.hpp>
+	"System.hpp"
+	"Entity.hpp"
+
+1406833455 /home/joel/Prog/yage/Game/Our New Life/Systems/PositionSystem.hpp
+	<Utils/Exceptions.hpp>
+	"System.hpp"
+
+1406833455 source:/home/joel/Prog/yage/Game/Our New Life/Systems/PositionSystem.cpp
+	"PositionSystem.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 source:/home/joel/Prog/yage/Game/Our New Life/Systems/RenderableSystem.cpp
+	"RenderableSystem.hpp"
+	<Utils/StringUtilities.hpp>
+	<ResourcesMgr/MediaManager.hpp>
+	<3D/ModelObject.hpp>
+	<Memory/NewInc.hpp>
+
+1406833455 /home/joel/Prog/yage/Game/Our New Life/Systems/RenderableSystem.hpp
+	<Utils/Exceptions.hpp>
+	"System.hpp"
+	"../Engines/GameEngine.hpp"
+
+1406833455 /home/joel/Prog/yage//3D/ModelObject.hpp
+	"RenderableObject.hpp"
+	"Resources/Model.hpp"
+
+1406833455 /home/joel/Prog/yage/Game/Our New Life/Systems/System.hpp
+	<list>
+	<Entity.hpp>
+	"../Engines/MessageManaging.hpp"
+
+1406833455 /home/joel/Prog/yage/Game/Our New Life/Systems/EntityFactory.hpp
+	<fstream>
+	<Utils/Exceptions.hpp>
+	<Utils/StringUtilities.hpp>
+	<Utils/Singleton.hpp>
+	<Entity.hpp>
+	"System.hpp"
+
+1406833455 source:/home/joel/Prog/yage/Game/Our New Life/Systems/EntityFactory.cpp
+	"EntityFactory.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 source:/home/joel/Prog/yage/Game/Our New Life/Systems/System.cpp
+	"System.hpp"
+	"../Engines/GameEngine.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 /home/joel/Prog/yage/Game/Our New Life/Engines/MessageManaging.hpp
+	<string>
+	<map>
+	<queue>
+	<thread>
+	<mutex>
+	<functional>
+	<glm/glm.hpp>
+	<Utils/Exceptions.hpp>
+	<Utils/Logger.hpp>
+
+1406833455 source:/home/joel/Prog/yage/Game/Our New Life/Engines/MessageManaging.cpp
+	"MessageManaging.hpp"
+	<Memory/NewInc.hpp>
+
+1406833455 /home/joel/Prog/yage/Core/Memory/SmartPtr.hpp
+	<algorithm>
+	<cassert>
+	"MemoryManager.hpp"
+	"SmartPtr.tcc"
+
+1406833455 /home/joel/Prog/yage/Core/Memory/MemoryManager.hpp
+	<cstdlib>
+	<map>
+	<stack>
+	<fstream>
+	"../Utils/Exceptions.hpp"
+	"../Utils/FilePath.hpp"
+
+1406833455 /home/joel/Prog/yage/Core/Memory/SmartPtr.tcc
+
+1406833455 /home/joel/Prog/yage/Core/Memory/NewInc.hpp
+	"MemoryManager.hpp"
+

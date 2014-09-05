@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1404148898 source:/home/joel/Prog/yage/Game/EntitySystem/System.cpp
+	"System.hpp"
+
+1404150513 /home/joel/Prog/yage/Game/EntitySystem/System.hpp
+	<list>
+	"Entity.hpp"
+
+1404150568 /home/joel/Prog/yage/Game/EntitySystem/Entity.hpp
+	<map>
+	"Components.hpp"
+
+1404257914 /home/joel/Prog/yage/Game/EntitySystem/Components.hpp
+	<string>
+	<sstream>
+	<boost/serialization/access.hpp>
+	<boost/serialization/base_object.hpp>
+	<Utils/SmartPtr.hpp>
+	<3D/RenderableObject.hpp>
+
+1402092624 /home/joel/Prog/yage//3D/RenderableObject.hpp
+
+1400277262 /home/joel/Prog/yage/Core//Utils/SmartPtr.hpp
+	<algorithm>
+	<cassert>
+	"SmartPtr.tcc"
+
+1400278038 /home/joel/Prog/yage/Core//Utils/SmartPtr.tcc
+
+1404150126 source:/home/joel/Prog/yage/Game/EntitySystem/EntityFactory.cpp
+	"EntityFactory.hpp"
+
+1404150102 /home/joel/Prog/yage/Game/EntitySystem/EntityFactory.hpp
+	<fstream>
+	<Utils/Exceptions.hpp>
+	<Utils/StringUtilities.hpp>
+	<Utils/Singleton.hpp>
+	"System.hpp"
+	"Entity.hpp"
+
+1393194365 /home/joel/Prog/yage/Core//Utils/Exceptions.hpp
+	<exception>
+	<string>
+
+1400430862 /home/joel/Prog/yage/Core//Utils/StringUtilities.hpp
+	<iostream>
+	<vector>
+	<sstream>
+	<string>
+	<algorithm>
+	"Exceptions.hpp"
+
+1400276457 /home/joel/Prog/yage/Core//Utils/Singleton.hpp
+

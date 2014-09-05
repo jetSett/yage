@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1406630120 source:/home/joel/Prog/yage/App/TestCore/main.cpp
+	<iostream>
+	<list>
+	<Utils/Logger.hpp>
+	<Memory/SmartPtr.hpp>
+	<Memory/NewInc.hpp>
+
+1406583752 /home/joel/Prog/yage/Core//Memory/NewInc.hpp
+	"MemoryManager.hpp"
+
+1406583779 /home/joel/Prog/yage/Core//Memory/MemoryManager.hpp
+	<cstdlib>
+	<map>
+	<stack>
+	<fstream>
+	"../Utils/Exceptions.hpp"
+	"../Utils/FilePath.hpp"
+
+1406500826 /home/joel/Prog/yage/Core//Utils/Exceptions.hpp
+	<exception>
+	<string>
+	<sstream>
+
+1388785974 /home/joel/Prog/yage/Core//Utils/FilePath.hpp
+	<string>
+	<algorithm>
+	<fstream>
+
+1388872070 /home/joel/Prog/yage/Core//Utils/Logger.hpp
+	<string>
+	<sstream>
+	<cassert>
+	<ctime>
+	<iostream>
+	<fstream>
+	"Exceptions.hpp"
+
+1406630134 /home/joel/Prog/yage/Core//Memory/SmartPtr.hpp
+	<algorithm>
+	<cassert>
+	"MemoryManager.hpp"
+	"SmartPtr.tcc"
+
+1406630137 /home/joel/Prog/yage/Core//Memory/SmartPtr.tcc
+
