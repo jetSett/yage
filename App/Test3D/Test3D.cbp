@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add option="-DGLM_FORCE_RADIANS" />
 					<Add directory="../../" />
 					<Add directory="../../Core/" />
 				</Compiler>

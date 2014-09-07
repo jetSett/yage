@@ -4,6 +4,7 @@
 #include <3D/CamerasManager.hpp>
 #include <Memory/NewInc.hpp>
 #include <3D/Loaders/MD2Loader.hpp>
+#include <3D/Loaders/ShadersLoader.hpp>
 #include <ResourcesMgr/MediaManager.hpp>
 #include <Graphics/Loaders/ImagesLoader.hpp>
 
@@ -77,6 +78,7 @@ int main()
 
     MediaManager::getInstance().registerLoader(new MD2Loader, ".md2");
     MediaManager::getInstance().registerLoader(new ImagesLoader, ".pcx");
+    MediaManager::getInstance().registerLoader(new ImagesLoader, ".pcx");
 
     D3::Renderer::getInstance().setMatrix(MAT_PROJECTION, proj);
 
@@ -88,6 +90,7 @@ int main()
 {
 
     ResourcePtr<Model> mod = MediaManager::getInstance().loadMediaFromFile<Model>("SINK.md2");
+    ResourcePtr<Shader> shad =
 
     while(InputManager::getInstance().stillRunning()){
         InputManager::getInstance().updateEvent();
