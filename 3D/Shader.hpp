@@ -8,6 +8,9 @@
 #include <ResourcesMgr/MediaManager.hpp>
 #include <ResourcesMgr/ResourceManager.hpp>
 
+/// \todo mettre tout à niveau.
+/// \warning ne PAS inclure/utiliser ce fichier
+
 namespace Graphics{
 namespace D3{
 

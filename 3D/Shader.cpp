@@ -7,7 +7,8 @@ namespace D3{
     void Shader::loadFromFile(const std::string name){
         _shad = ResourceManager::getInstance().get<ShaderBase>(name);
         if(!_shad){
-            _shad = MediaManager::getInstance().loadMediaFromFile<ShaderBase>(name);
+            /// \warning mettre tout à niveau : cette ligne provoquait des bugs
+            //_shad = MediaManager::getInstance().loadMediaFromFile<ShaderBase>(name);
             ResourceManager::getInstance().add(name, _shad);
         }
     }

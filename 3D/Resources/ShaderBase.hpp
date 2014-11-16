@@ -6,6 +6,9 @@
 
 #include <ResourcesMgr/Resource.hpp>
 
+/// \todo mettre tout à niveau.
+/// \warning ne PAS inclure/utiliser ce fichier
+
 enum ShaderType{
     SHAD_PIX, SHAD_VERT
 };

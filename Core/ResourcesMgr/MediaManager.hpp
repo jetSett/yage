@@ -17,10 +17,9 @@
 //ici mettre tous les fichiers contenus dans les dossiers Resources
 #include "../../3D/Resources/Model.hpp"
 #include "../../Graphics/Resources/Image.hpp"
-#include "../../3D/Resources/ShaderBase.hpp"
 #include "../../Sounds/Resources/Sound.hpp"
 
-typedef TYPELIST_4(Model, Image, ShaderBase, Sound) Medias;
+typedef TYPELIST_3(Model, Image, Sound) Medias;
 
 template<class T>
 struct MediaHolder{

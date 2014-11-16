@@ -4,6 +4,9 @@
 #include <ResourcesMgr/Loaders.hpp>
 #include "../Resources/ShaderBase.hpp"
 
+/// \todo mettre tout à niveau.
+/// \warning ne PAS inclure/utiliser ce fichier
+
 class ShadersLoader : public Loader<ShaderBase>{
     public:
         ShadersLoader(ShaderType);

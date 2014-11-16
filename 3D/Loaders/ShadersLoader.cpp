@@ -1,9 +1,10 @@
 #include "../Renderer.hpp"
 #include "ShadersLoader.hpp"
+#include "../Shader.hpp"
 #include <Memory/NewInc.hpp>
 
 template<>
-Shader* Loader<Shader>::load(const std::string& name){
+Graphics::D3::Shader* Loader<Graphics::D3::Shader>::load(const std::string& name){
     return loadFromFile(name);
 }
 

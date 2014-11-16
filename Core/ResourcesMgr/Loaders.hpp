@@ -10,8 +10,7 @@
 #include "ResourceManager.hpp"
 
 class Image;
-class Shader;
-
+class Model;
 template<class T>
 class Loader
 {
@@ -40,8 +39,8 @@ class Loader
 
 template<>
 Image* Loader<Image>::load(const std::string& name);
-template<>
-Shader* Loader<Shader>::load(const std::string& name);
+//template<>
+//Shader* Loader<Shader>::load(const std::string& name);
 
 
 #endif // LOADER_HPP
